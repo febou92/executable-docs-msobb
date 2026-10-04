@@ -14,6 +14,7 @@ ms.custom: mvc, devx-track-azurecli, mode-api, innovation-engine, linux-related-
 
 ```bash
 export RANDOM_ID="$(openssl rand -hex 3)"
+echo $(echo test)
 export MY_RESOURCE_GROUP_NAME="myVMResourceGroup$RANDOM_ID"
 export REGION=EastUS
 az group create --name $MY_RESOURCE_GROUP_NAME --location $REGION
